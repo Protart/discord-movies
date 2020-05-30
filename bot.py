@@ -6,8 +6,9 @@ import pause
 import datetime
 from math import *
 import asyncio
-print(datetime.__file__)
 
+
+token = os.environ['DISCORDMOVIES']
 
 f_dir = "movie_subtitles"
 
@@ -93,4 +94,4 @@ async def on_message(message):
         play = False
         await message.channel.send('stopped')
 
-client.run('NzE2MDMzMjk4ODc4NjkzNDg0.XtF4Pg.JjeQaFkQcLuisqO8w1vqyBV_4zw')
+client.run(token)
